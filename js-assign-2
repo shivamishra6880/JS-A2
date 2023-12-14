@@ -1,0 +1,72 @@
+Que 01-What are the differences between var, let and const?
+Ans:- a) Var declarations are function scoped. Let and Const are block scoped.
+ Function scope is created by declaring a function. Block scope is created by if statements,
+  for loops, while loops etc. Let’s understand this with an example.
+b) Var allows duplicate identifiers. Let and Const do not allow duplicate identifiers.
+c) Values declared with Var and Let variables can be re-assigned. Values declared with
+ const variables cannot be re-assigned.
+d) Var declarations are hoisted and initialized with undefined. Let and Const are hoisted 
+but not initialized with undefined.
+--------------------------------------------------------------------------------------------------------------------------------------
+Que 02- Difference between undefined vs not defined vs NaN ?
+Ans:- NaN: Not a number: As the name implies, it is used to denote that the value of an
+ object is not a number. There are many ways that you can generate this error, one being 
+ invalid math opertaions such as 0/0 or sqrt(-1)
+
+undefined: It means that the object doesn't have any value, therefore undefined. This occurs
+ when you create a variable and don't assign a value to it.
+
+Not define: "not defined" is usually caused by a typo, or by trying to access a variable that
+
+ is out of scope. "undefined" is usually caused by forgetting to assign a value to a variable.
+----------------------------------------------------------------------------------------------------------------------------------------
+Que 03- What is difference between null and undefined and where to use what?
+Ans:- JavaScript always assigns undefined to indicate the absence of a value by default, and it 
+never automatically assigns null as a value. A variable will only return null if a programmer or 
+ API specifically assigns the value null to the variable.
+Since undefined is the default value assigned by JavaScript to uninitialized variables, if you want 
+to indicate the absence of a deal explicitly, always use null instead of undefined to avoid confusion.
+----------------------------------------------------------------------------------------------------------------------------------------
+Que 04- What is execution context?
+Ans:- The browser's JavaScript engine then creates a special environment to handle the
+ transformation and execution of this JavaScript code. This environment is known as the
+  Execution Context.
+
+The Execution Context contains the code that's currently running, and everything that aids
+ in its execution.
+
+During the Execution Context run-time, the specific code gets parsed by a parser, the variables 
+and functions are stored in memory, executable byte-code gets generated, and the code gets executed.
+
+There are two kinds of Execution Context in JavaScript:
+
+Global Execution Context (GEC)
+Function Execution Context (FEC)
+
+Global Execution Context (GEC)
+Whenever the JavaScript engine receives a script file, it first creates a default Execution Context
+ known as the Global Execution Context (GEC).
+
+The GEC is the base/default Execution Context where all JavaScript code that is not inside of a
+ function gets executed.
+
+For every JavaScript file, there can only be one GEC.
+Function Execution Context (FEC)
+Whenever a function is called, the JavaScript engine creates a different type of Execution Context
+ known as a Function Execution Context (FEC) within the GEC to evaluate and execute the code within that function.
+
+Since every function call gets its own FEC, there can be more than one FEC in the run-time of a script.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Que 05- What is use of prompt in JavaScript? 
+Ans:-  prompt() instructs the browser to display a dialog with an optional message prompting the user
+ to input some text, and to wait until the user either submits the text or cancels the dialog.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Que 06- Why JavaScript is Dyanmic Language?
+Ans:- JavaScript is considered a dynamic programming language because it allows for dynamic typing,
+ meaning that variables can hold values of any type without type enforcement. This allows for 
+ flexibility in programming and makes it easier to write code that can adapt to different situations.
+  Additionally, JavaScript supports features such as object manipulation, which allows for the creation
+   and modification of objects at runtime, further contributing to its dynamic nature.
